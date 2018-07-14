@@ -18,14 +18,14 @@ public class Session {
   private ByteBuffer rxBuf = ByteBuffer.allocate(Protocol.MAX_HEADER_SIZE + Protocol.MAX_BODY_SIZE);
 
   private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd-HH:mm:ss.SSS");
-  private SocketChannel socket;
+  private ByteChannel socket;
   private String senderCompId;
   private String targetCompId;
   private Version version;
   private int sequence;
   private String now;
 
-  public Session(SocketChannel socket, Version version, String senderCompId, String targetCompId) {
+  public Session(ByteChannel socket, Version version, String senderCompId, String targetCompId) {
     this.socket       = socket;
     this.version      = version;
     this.senderCompId = senderCompId;

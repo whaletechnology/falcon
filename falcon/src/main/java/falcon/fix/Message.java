@@ -1,7 +1,5 @@
 package falcon.fix;
 
-import static falcon.fix.Tags.*;
-import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
